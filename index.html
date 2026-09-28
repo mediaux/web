@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDr. Marcela Šašková, Poliklinika Černý Most - Parník</title>
+    <meta name="description" content="Ordinace praktického lékaře pro dospělé na Poliklinice Černý Most - Parník, Generála Janouška 902/17, 198 00 Praha 9. Poskytujeme komplexní zdravotní péči pro dospělé.">
+	<link rel="icon" type="image/png" href="./img/logo-favicon_small.png">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./src/lib/fontawesome/css/all.min.css">
+    
+    <!-- Externí CSS -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+    <!-- Navigace -->
+    <header id="site-header">
+        <div class="container header-inner">
+            <div class="site-logo">
+                <a href="#uvod">
+                    <img src="./img/logo.png" alt="MUDr. Marcela Šašková">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#uvod">Úvod</a></li>
+                    <li><a href="#aktuality">Aktuality</a></li>
+                    <li><a href="#sluzby">Služby</a></li>
+                    <li><a href="#cenik">Ceník</a></li>
+                    <li><a href="#ordinacnihodiny">Ordinační hodiny</a></li>
+                    <li><a href="#kontakty">Kontakty</a></li>
+                </ul>
+            </nav>
+			<button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Mobilní menu">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+		<div class="mobile-menu" id="mobile-dropdown">
+			<ul>
+				<li><a href="#uvod">Úvod</a></li>
+				<li><a href="#aktuality">Aktuality</a></li>
+				<li><a href="#sluzby">Služby</a></li>
+				<li><a href="#cenik">Ceník</a></li>
+				<li><a href="#ordinacnihodiny">Ordinační hodiny</a></li>
+				<li><a href="#kontakty">Kontakty</a></li>
+			</ul>
+		</div>
+    </header>
+
+    <main>
+        <!-- Úvod / Hero Section -->
+        <section id="uvod" class="page-section bg-white">
+            <div class="container grid-2 hero-wrapper">
+                <div class="hero-content">
+                    <img src="./img/logo.png" alt="Logo ordinace" class="hero-logo">
+                    <h1 class="hero-title">MUDr. Marcela Šašková</h1>
+                    <h2 class="hero-subtitle">Praktický lékař pro dospělé</h2>
+                    <p class="hero-contact">
+						<i class="far fa-envelope"></i> <span class="protected-email" data-user="ordinace" data-domain="drsaskova.cz"></span><br>
+                        <i class="fas fa-map-marker-alt"></i> Poliklinika Černý Most – Parník
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img src="./img/undraw_medicine_hqqg.png" alt="Tým lékařů" class="section-img hero-img-large">
+                </div>
+            </div>
+        </section>
+
+        <!-- Aktuality -->
+        <section id="aktuality" class="page-section bg-light">
+            <div class="container">
+                <h3 class="section-title">Aktuality</h3>
+                <div class="grid-2">
+                    <div>
+                        <img src="./img/undraw_blog-post_f68f.png" alt="Aktuality ilustrace" class="section-img">
+                    </div>
+                    <div class="content-box">
+                        <h2>Očkování proti žloutence typu A</h2>
+                        <p>V naší ordinaci nabízíme očkování proti žloutence typu A. Vakcíny máme k dispozici.</p>
+
+                        <hr>
+
+                        <h2>Upozornění</h2>
+                        <p class="alert-text">
+                            Dovolujeme si vás upozornit, že klient, který se nedostaví na objednaný termín bez včasné omluvy (minimálně 48 hodin předem), ztratí možnost vzdálené komunikace s naší ordinací, včetně vystavování e-receptů. Veškeré záležitosti pak bude muset vyřizovat pouze osobně.
+                        </p>
+                        <p>
+                            Mnoho klientů se bohužel na objednaný termín nedostaví a neomluví, což blokuje kapacitu ordinace a znemožňuje jiným klientům získat dřívější termín. Věříme, že toto opatření přispěje ke zlepšení dostupnosti naší péče pro všechny. Děkujeme za pochopení.
+                        </p>
+
+                        <hr>
+
+                        <h2>Objednaní pacienti</h2>
+                        <p class="alert-text">
+                            Ordinační hodiny pro objednané pacienty jsou vyhrazeny pouze objednaným pacientům. Prosíme o respektování tohoto pravidla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Služby -->
+        <section id="sluzby" class="page-section bg-white">
+            <div class="container">
+                <h3 class="section-title">Služby</h3>
+                <div class="grid-2">
+                    <div class="content-box">
+                        <p>Naše ordinace poskytuje komplexní zdravotní péči pro dospělé. Mezi naše služby patří:</p>
+                        <ul class="services-list">
+                            <li><i class="fas fa-check"></i> Ambulantní péče, léčba akutních a chronických onemocnění</li>
+                            <li><i class="fas fa-check"></i> Preventivní péče, preventivní prohlídky</li>
+                            <li><i class="fas fa-check"></i> Poradenská činnost</li>
+                            <li><i class="fas fa-check"></i> Možnost objednání na konkrétní čas</li>
+                            <li><i class="fas fa-check"></i> Péče o pacienty s diabetem</li>
+                            <li><i class="fas fa-check"></i> Očkování, pravidelná i do zahraničí</li>
+                            <li><i class="fas fa-check"></i> EKG, CRP, INR, pulsní oxymetr, Streptest A, měření kotníkových tlaků</li>
+                            <li><i class="fas fa-check"></i> Vyšetření stolice na skryté krvácení, prevence karcinomu střeva</li>
+                            <li><i class="fas fa-check"></i> Analýza moči</li>
+                            <li><i class="fas fa-check"></i> Vyšetření na potravinářský, řidičský, zbrojní průkaz</li>
+                            <li><i class="fas fa-check"></i> Předoperační vyšetření</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="./img/undraw_medical-care_7m9g-1024x713.png" alt="Služby ilustrace" class="section-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ceník -->
+        <section id="cenik" class="page-section bg-light">
+            <div class="container">
+                <h3 class="section-title">Ceník úkonů nehrazených pojišťovnami<br><small>(platný od 29. 12. 2025)</small></h3>
+                <div class="table-responsive">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Úkon</th>
+                                <th class="price-col">Cena (Kč)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-group-header"><td colspan="2">Vyšetření pro:</td></tr>
+                            <tr><td>Potvrzení pro řidičský průkaz</td><td>900</td></tr>
+                            <tr><td>Potvrzení pro prodloužení řidičského průkazu po 65 roce věku</td><td>300</td></tr>
+                            <tr><td>Potvrzení pro vydání/prodloužení zbrojního průkazu</td><td>1000</td></tr>
+                            <tr><td>Potvrzení pro nástup do zaměstnání (vstupní či periodická prohlídka)</td><td>800</td></tr>
+                            <tr><td>Potvrzení o způsobilosti ke studiu, potvrzení pro letní tábory</td><td>300</td></tr>
+                            <tr><td>Potvrzení o zdravotním stavu pro jiné účely (soudy, pracovní úřad, sportovní akce, apod.)</td><td>600</td></tr>
+                            <tr><td>Potvrzení pro zdravotní průkaz (potravinářský)</td><td>400</td></tr>
+                            <tr><td>Předoperační vyšetření před výkony nehrazených z veřejného pojištění (plastická operace apod.)</td><td>1400 + přímé náklady (laboratoř apod.)</td></tr>
+                            
+                            <tr class="table-group-header"><td colspan="2">Ostatní úkony:</td></tr>
+                            <tr><td>Žádost pro umístění do domova seniorů</td><td>500</td></tr>
+                            <tr><td>Aplikace očkovací látky, která nepatří mezi povinná očkování</td><td>250</td></tr>
+                            <tr><td>Aplikace léčiva do svalu či podkoží</td><td>250</td></tr>
+                            <tr><td>Výpis ze zdravotní dokumentace pro pracovně lékařskou prohlídku</td><td>500</td></tr>
+                            <tr><td>Výpis pro pojišťovnu</td><td>1 000</td></tr>
+                            <tr><td>Vyplnění lázeňského návrhu (příspěvkového)</td><td>500 – 1 000 (dle náročnosti)</td></tr>
+                            <tr><td>Administrativní výkon jiný</td><td>400</td></tr>
+                            <tr><td>Vystavení duplikátu žádanek, průkazů, posudků</td><td>100</td></tr>
+                            <tr><td>Příplatek k úkonu za pacientem požadované expresní vyřízení (do 24 hodin v pracovní dny)</td><td>200</td></tr>
+                            <tr><td>Výpočet bolestného pro potřeby pracovního úrazu</td><td>600</td></tr>
+                            <tr><td>Výpočet bolestného pro potřeby komerčního pojištění</td><td>dle dohody</td></tr>
+                            <tr><td>Vyšetření CRP metodou POCT na vlastní žádost</td><td>300</td></tr>
+                            <tr><td>Vyšetření Streptest na vlastní žádost</td><td>300</td></tr>
+                            <tr><td>TOKS (v případech, kdy nehradí pojišťovna)</td><td>300</td></tr>
+                            <tr><td>Stanovení hladiny cukru glukometrem na vlastní žádost</td><td>250</td></tr>
+
+                            <tr class="table-group-header"><td colspan="2">Samoplátci (nepojištění pacienti):</td></tr>
+                            <tr><td>Vyšetření nepojištěného pacienta kontrolní</td><td>500 + přímé náklady</td></tr>
+                            <tr><td>EKG u nepojištěného pacienta</td><td>400</td></tr>
+
+                            <tr class="table-group-header"><td colspan="2">Kopie:</td></tr>
+                            <tr><td>Kopie (1 strana)</td><td>5</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ordinační hodiny -->
+        <section id="ordinacnihodiny" class="page-section bg-white">
+            <div class="container">
+                <h3 class="section-title">Ordinační hodiny</h3>
+                <div class="grid-2">
+                    <div>
+                        <div class="table-responsive">
+                            <table class="styled-table hours-table">
+                                <tbody>
+                                    <tr>
+                                        <th>Pondělí</th>
+                                        <td>7:30 – 10:30<br><em>(ambulance)</em></td>
+                                        <td>10:30 – 12:30<br><span class="alert-text">(jen pro objednané)</span></td>
+                                        <td>13:00 – 18:00<br><span class="alert-text">(jen pro objednané)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Úterý</th>
+                                        <td>7:30 – 10:30<br><em>(ambulance)</em></td>
+                                        <td>10:30 – 13:00<br><span class="alert-text">(jen pro objednané)</span></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Středa</th>
+                                        <td>7:30 – 10:30<br><em>(ambulance)</em></td>
+                                        <td>10:30 – 12:30<br><span class="alert-text">(jen pro objednané)</span></td>
+                                        <td>13:00 – 15:00<br><span class="alert-text">(jen pro objednané)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Čtvrtek</th>
+                                        <td>7:30 – 10:30<br><em>(ambulance)</em></td>
+                                        <td>10:30 – 13:00<br><span class="alert-text">(jen pro objednané)</span></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pátek</th>
+                                        <td>9:00 – 11:00<br><span class="alert-text">(jen pro objednané)</span></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="alert-box">
+							<i class="fas fa-exclamation-triangle"></i>
+                            Ordinační hodiny pro objednané pacienty jsou vyhrazeny striktně pouze objednaným pacientům.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/undraw_time-management_4ss6-967x1024.png" alt="Ordinační hodiny ilustrace" class="section-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakty -->
+        <section id="kontakty" class="page-section bg-light">
+            <div class="container">
+                <h3 class="section-title">Kontakty</h3>
+                <div class="grid-2">
+                    <div>
+                        <img src="./img/parnik1_web_small.jpg" alt="Poliklinika Černý Most - Parník" class="section-img shadow-img">
+                    </div>
+                    <div class="content-box">
+                        <div class="contact-item">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <strong>Lékařka:</strong> MUDr. Marcela Šašková<br>
+                                <strong>Zdravotní sestra:</strong> Šárka Havelková
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <div>
+                                <span class="protected-email" data-user="ordinace" data-domain="drsaskova.cz"></span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <s>777 778 123</s>
+                            </div>
+                        </div>
+
+                        <div class="alert-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Komunikace probíhá výhradně emailem. Telefony pro velké vytížení ordinace nestíháme vyřizovat.
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                Poliklinika Černý Most – Parník (<a href="https://poliklinikaparnik.cz/" target="_blank" rel="noopener">poliklinikaparnik.cz</a>)<br>
+                                2. patro<br>
+                                Generála Janouška 902/17<br>
+                                198 00 Praha 9
+                            </div>
+                        </div>
+
+                        <div class="contact-action">
+                            <a href="https://mapy.com/s/kefugupapo" class="btn-primary" target="_blank" rel="noopener">Zobrazit na mapě</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <img src="./img/logo.png" alt="Logo ordinace" class="footer-logo">
+                <p>MUDr. Marcela Šašková<br>Praktický lékař pro dospělé</p>
+                <p class="copyright">&copy; 2026 MediAux s.r.o. | Ilustrace: unDraw</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Provozovatel</h4>
+                <p><strong>MediAux s.r.o.</strong></p>
+                <p>Generála Janouška 902/17<br>Černý Most, 198 00 Praha 9</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Firemní údaje</h4>
+                <p>IČO: 17184649</p>
+                <p>Spisová značka:<br>C 367760/MSPH Městský soud v Praze</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Důležité informace</h4>
+                <ul>
+                    <li><a href="./files/Informace_o_zpracovani_osobnich_udaju.pdf" target="_blank" rel="noopener">Informace o zpracování osobních údajů (PDF)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+	<script src="./src/script.js"></script>
+</body>
+</html>
