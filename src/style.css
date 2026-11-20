@@ -1,0 +1,498 @@
+/* ==========================================================================
+   Základní proměnné a reset
+   ========================================================================== */
+:root {
+    --primary-blue: #2e70ce;
+    --dark-blue: #1d2366;
+    --text-color: #333333;
+    --light-bg: #f5f7fa;
+    --white-bg: #ffffff;
+    --alert-red: #d32f2f;
+    --border-color: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: var(--white-bg);
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   Struktura a pozadí
+   ========================================================================== */
+.bg-white { background-color: var(--white-bg); }
+.bg-light { background-color: var(--light-bg); }
+
+section.page-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: var(--dark-blue);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.section-title small {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 5px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.shadow-img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================================================
+   Hlavička a navigace
+   ========================================================================== */
+#site-header {
+    background-color: var(--primary-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.site-logo img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.main-menu a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-menu a:hover {
+    color: #c9e0ff;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu a {
+    color: var(--text-color);
+    font-weight: 500;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-menu a:hover {
+    color: var(--primary-blue);
+    background-color: #f9f9f9;
+}
+
+/* ==========================================================================
+   Úvodní sekce (Hero)
+   ========================================================================== */
+#uvod {
+    padding: 60px 0;
+}
+
+.hero-wrapper {
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+	position: relative;
+    z-index: 2;
+}
+
+.hero-logo {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+
+.hero-contact {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.hero-contact i {
+    color: var(--primary-blue);
+    width: 20px;
+}
+
+/* Jemné zvětšení pouze pro obrázek v hero sekci */
+.hero-img-large {
+    transform: scale(1.30); /* Mírné zvětšení o 30 % */
+    transform-origin: center right; /* Zvětšuje se směrem od pravého okraje */
+	position: relative;
+    z-index: 1;
+}
+
+/* Na mobilech zvětšení vypneme, aby obrázek nepřetekl obrazovku */
+@media (max-width: 768px) {
+    .hero-img-large {
+        transform: none;
+    }
+}
+
+/* ==========================================================================
+   Obsah (Aktuality, Služby)
+   ========================================================================== */
+.content-box h2 {
+    font-size: 22px;
+    color: var(--dark-blue);
+    margin: 0 0 15px 0;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+}
+
+.content-box hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+
+.alert-text {
+    color: var(--alert-red);
+    font-weight: 600;
+}
+
+.services-list {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.services-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.services-list i {
+    color: var(--primary-blue);
+    margin-top: 4px;
+}
+
+/* ==========================================================================
+   Tabulky (Ceník, Ordinační hodiny)
+   ========================================================================== */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white-bg);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.styled-table thead tr {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    text-align: left;
+}
+
+table.styled-table th, 
+table.styled-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table.styled-table .price-col {
+    width: 200px;
+    white-space: nowrap;
+}
+
+.table-group-header {
+    background-color: #f1f5f9;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+table.styled-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Oprava Ordinačních hodin */
+.hours-table th {
+    background-color: #f8fafc;
+    color: var(--dark-blue);
+    font-weight: 700;
+    width: 120px;
+    vertical-align: top;
+    border-right: 1px solid var(--border-color);
+}
+
+.hours-table td {
+    vertical-align: top;
+}
+
+.important-notice {
+    color: var(--alert-red);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+    background: #fff4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ==========================================================================
+   Kontakty
+   ========================================================================== */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: var(--primary-blue);
+    margin-top: 3px;
+    width: 30px;
+    text-align: center;
+}
+
+.alert-box {
+    background-color: #fff4f4;
+    color: var(--alert-red);
+    padding: 15px 20px;
+    border-left: 4px solid var(--alert-red);
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.alert-box i {
+    margin-top: 3px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+
+/* ==========================================================================
+   Patička
+   ========================================================================== */
+.site-footer {
+    background-color: #1a1e29;
+    color: #94a3b8;
+    padding: 70px 0 30px;
+    font-size: 15px;
+}
+
+.site-footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.site-footer a {
+    color: #94a3b8;
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-logo {
+    max-width: 70px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+}
+
+.site-footer ul {
+    list-style: none;
+}
+
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* ==========================================================================
+   Responzivita (Mobilní zařízení)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto 15px;
+    }
+
+    .hours-table th {
+        width: auto;
+    }
+    
+    table.styled-table th, 
+    table.styled-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
